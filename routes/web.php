@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('portalpix.com/', function () {
     return view('home', [
 		'title' => 'Home'
 			   ]);
