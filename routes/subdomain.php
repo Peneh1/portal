@@ -7,3 +7,7 @@ Route::get('/home', function ($subtitle) {
         'title' => 'welcome to ' . $subtitle
     ]);
 });
+
+Route::get('post/{id}', function ($subdomain, $id) {
+        return 'Post ' . $id . ' in second subdomain';
+    });
