@@ -50,20 +50,3 @@ Route::get('/privacy-policy', function () {
 			   ]);
 });
 
-# SUBDOMAIN APP URL ===================================================
-
-Route::domain('{subdomain}.portalpix.com')->group(function () {
-
-    Route::get('/', function ($subdomain) {
-        return view('welcome', [
-			'title' => 'Welcome to '. $subdomain,
-
-		]);
-    });
-    Route::get('post/{id}', function ($subdomain, $id) {
-        return 'Post ' . $id . ' in second subdomain';
-    });
-
-});#END SUBDOMAIN APP URL ===================================================
-
-
