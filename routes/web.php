@@ -49,3 +49,12 @@ Route::get('/privacy-policy', function () {
 		'title' => 'Privacy Policy'
 			   ]);
 });
+
+# APP
+
+Route::get('{subdomain}.portalpix.com/', function ($subdomain) {
+    return view('welcome', [
+		'title' => 'Welcome to ' . $subdomain,
+			   ]);
+});
+
