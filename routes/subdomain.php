@@ -3,7 +3,7 @@
 use App\Models\projects;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function ($subdomain) {
+Route::get('/', function ($subdomain) {
     return view('app', [
         'projects' => projects::all(),
     ]);
