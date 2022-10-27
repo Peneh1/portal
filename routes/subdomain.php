@@ -1,10 +1,11 @@
 <?php
 
+use App\Models\projects;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function ($subtitle) {
-    return view('welcome', [
-        'title' => 'welcome to ' . $subtitle
+Route::get('/home', function ($subdomain) {
+    return view('app', [
+        'projects' => projects::all(),
     ]);
 });
 
