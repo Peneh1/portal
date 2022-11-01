@@ -14,38 +14,38 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', [
+    return view('main/home', [
 		'title' => 'Home'
 			   ]);
 });
 
 Route::get('/sign-up', function () {
-    return view('sign-up', [
+    return view('main/sign-up', [
 		'title' => 'Sign Up'
 			   ]);
 });
 
 
 Route::get('/log-in', function () {
-    return view('log-in', [
+    return view('main/log-in', [
 		'title' => 'Log in'
 			   ]);
 });
 
 Route::get('/article-details', function () {
-    return view('article-details', [
+    return view('main/article-details', [
 		'title' => 'Article Details'
 			   ]);
 });
 
 Route::get('/terms-conditions', function () {
-    return view('terms-conditions', [
+    return view('main/terms-conditions', [
 		'title' => 'Terms Conditions'
 			   ]);
 });
 
 Route::get('/privacy-policy', function () {
-    return view('privacy-policy', [
+    return view('main/privacy-policy', [
 		'title' => 'Privacy Policy'
 			   ]);
 });
